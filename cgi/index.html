@@ -69,19 +69,28 @@
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading">via SSI display the document uri</h4>
-                        <p class="list-group-item-text"><!--#echo var="DOCUMENT_URI" --></p>
+                        <p class="list-group-item-text">
+                            SSI Result is:
+                            <!--#echo var="DOCUMENT_URI" -->
+                        </p>
                     </a>
                 </div>
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading">via SSI display the referer header of the request</h4>
-                        <p class="list-group-item-text"><!--#echo reqheader="referer"  --></p>
+                        <p class="list-group-item-text">
+                            SSI Result is:
+                            <!--#echo reqheader="referer"  -->
+                        </p>
                     </a>
                 </div>
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading">via SSI display the request state "pahtinfo"</h4>
-                        <p class="list-group-item-text"><!--#echo reqheader="pathinfo"  --></p>
+                        <p class="list-group-item-text">
+                            SSI Result is:
+                            <!--#echo reqheader="pathinfo"  -->
+                        </p>
                     </a>
                 </div>
             </div>
