@@ -4,17 +4,20 @@
 //Auth: Rohit Lakhanpal
 //LMod: 25/04/2017
 
-// Set a time limit of 5 seconds for script execution
-$max_execution_time=5;
+// Include relevant modules
+$path = $_SERVER['DOCUMENT_ROOT'];
+$path .= "/common/constants.php";
+include_once($path);
+
+// Set a time limit of for script execution
 set_time_limit($max_execution_time);
 
 // Page Properties
-$site_title="Web Servers & Web Technology";
 $page_title=basename(__FILE__, '.php').".php"; // File Name is the page header
 $page_description="This page performs some disk-intensive operations.";
 
 // Recursively list the number of txt files
-for($i=0; $i<750; $i++)
+for($i=0; $i<500; $i++)
 {								        
     exec("find ~ -type f | grep txt");										    
 }
@@ -36,50 +39,16 @@ for($i=0; $i<750; $i++)
     <title><?php echo $site_title; ?></title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
-
-    
-
+    <link href="/assets/css/site.css" rel="stylesheet" />
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/"><?php echo $site_title; ?></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="/CPU.php">CPU.php</a>
-                    </li>
-                    <li>
-                        <a href="/IO.php">IO.php</a>
-                    </li>                   
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <?php echo $nav_html; ?>
 
     <!-- Page Content -->
     <div class="container">
