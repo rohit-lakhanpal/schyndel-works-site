@@ -8,7 +8,7 @@
 $site_title="Schyndel Works Pty Ltd"; // Site Title
 
 // Nav Properties
-$nav_html = '
+$nav_html = <<<EOT
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -36,6 +36,9 @@ $nav_html = '
     </div>
     <!-- /.container -->
   </nav>
-'; ?>
+  EOT;
+ 
+ 
+ ?>
 
   
