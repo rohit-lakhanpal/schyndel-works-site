@@ -37,6 +37,9 @@ $page_description="This page serves as the home page for [".getcwd()."].";
 
     <!-- Custom CSS -->
     <link href="/assets/css/site.css" rel="stylesheet" />
+
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
   </head>
 
   <body>

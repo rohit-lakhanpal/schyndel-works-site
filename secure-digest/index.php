@@ -42,6 +42,9 @@ if (isset($server_var)) {
 
     <!-- Custom CSS -->
     <link href="/assets/css/site.css" rel="stylesheet" />
+
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
   </head>
 
   <body>

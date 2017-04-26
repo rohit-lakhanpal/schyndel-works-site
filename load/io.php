@@ -17,7 +17,7 @@ $page_title=basename(__FILE__, '.php').".php"; // File Name is the page header
 $page_description="This page performs some disk-intensive operations.";
 
 // Recursively list the number of txt files
-for($i=0; $i<500; $i++)
+for($i=0; $i<600; $i++)
 {								        
     exec("find ~ -type f | grep txt");										    
 }
@@ -43,6 +43,9 @@ for($i=0; $i<500; $i++)
 
     <!-- Custom CSS -->
     <link href="/assets/css/site.css" rel="stylesheet" />
+
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
 </head>
 
 <body>
