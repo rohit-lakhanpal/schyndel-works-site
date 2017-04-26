@@ -51,46 +51,45 @@ $page_description="This page serves as the home page for [".getcwd()."].";
             <h1><?php echo $page_title; ?></h1>
             <p class="lead">
               <?php echo $page_description; ?>
-            </p>            
-          </div>          
+            </p>
+          </div>
         </div>
         <!-- /.row -->
       </div>
       <!-- /.container -->
 
       <div class="album text-muted">
-      <div class="container">
+        <div class="container">
 
-        <div class="row">
-          <div class="card">
-            <img src="/assets/img/image-1.jpg" alt="Image 1 (jpg)" class="img-rounded" />
-            <p class="card-text">This is a jpg image. It should resolve.</p>
-          </div>
-          <div class="card">
-            <img src="/assets/img/image-2.jpg" alt="Image 2 (jpg)" class="img-rounded" />
-            <p class="card-text">This is a jpg image. It should resolve.</p>
-          </div>
-          <div class="card">
-            <img src="/assets/img/image-3.png" alt="Image 3 (png)" class="img-rounded" />
-            <p class="card-text">This is a png image. It should resolve.</p>
-          </div>
+          <div class="row">
+            <div class="card col-md-2 center-block">
+              <img src="/assets/img/image-1.jpg" alt="Image 1 (jpg)" class="img-rounded" />
+              <p class="card-text">It should resolve. (jpg)</p>
+            </div>
+            <div class="card  col-md-2 center-block">
+              <img src="/assets/img/image-2.jpg" alt="Image 2 (jpg)" class="img-rounded" />
+              <p class="card-text">It should resolve. (jpg)</p>
+            </div>
+            <div class="card  col-md-2 center-block">
+              <img src="/assets/img/image-3.png" alt="Image 3 (png)" class="img-rounded" />
+              <p class="card-text">It should resolve. (png)</p>
+            </div>
 
-          <div class="card">
-            <img src="/assets/img/image-4.png" alt="Image 4 (png)" class="img-rounded" />
-            <p class="card-text">This is a png image. It should resolve.</p>
+            <div class="card  col-md-2 center-block">
+              <img src="/assets/img/image-4.png" alt="Image 4 (png)" class="img-rounded" />
+              <p class="card-text">It should resolve. (png)</p>
+            </div>
+            <div class="card  col-md-2 center-block">
+              <img src="/assets/img/image-5.gif" alt="Image 5 (gif)" class="img-rounded" />
+              <p class="card-text">It should <strong>not</strong> resolve. (gif)</p>
+            </div>
+            <div class="card  col-md-2 center-block">
+              <img src="/assets/img/image-6.gif" alt="Image 6 (gif)" class="img-rounded" />
+              <p class="card-text">It should <strong>not</strong> resolve. (gif)</p>
+            </div>
           </div>
-          <div class="card">
-            <img src="/assets/img/image-5.gif" alt="Image 5 (gif)" class="img-rounded" />
-            <p class="card-text">This is a gif image. It should <strong>not</strong> resolve.</p>
-          </div>
-          <div class="card">
-            <img src="/assets/img/image-6.gif" alt="Image 6 (gif)" class="img-rounded" />
-            <p class="card-text">This is a gif image. It should <strong>not</strong> resolve.</p>
-          </div>         
         </div>
-
       </div>
-    </div>
 
   </body>
 
