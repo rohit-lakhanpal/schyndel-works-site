@@ -17,6 +17,7 @@ $page_title=basename(__FILE__, '.php').".php"; // File Name is the page header
 $page_description="This page performs some CPU-intensive operations.";
 
 // Recursively calculate the 10th power of a fraction
+for($i=0; $i<180000; $i++)
 {
         $OutVal=0.999;
         while($OutVal=pow($OutVal, 1.2345));
