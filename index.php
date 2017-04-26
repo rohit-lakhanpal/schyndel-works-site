@@ -12,7 +12,7 @@ include_once($path);
 
 // Page Properties
 $page_title=basename(__FILE__, '.php').".php"; // File Name is the page header
-$page_description="This page serves as the home page for [".substr(__DIR__, strlen($_SERVER['DOCUMENT_ROOT']))."].";
+$page_description="This page serves as the home page for [".getcwd()."].";
     
 ?>
 
@@ -25,8 +25,8 @@ $page_description="This page serves as the home page for [".substr(__DIR__, strl
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Home Page">
+    <meta name="author" content="Schyndel Works">
 
     <title>
       <?php echo $site_title; ?>
