@@ -61,25 +61,25 @@
                     <!--#echo var="DOCUMENT_URI" -->
                 </h1>
                 <p class="lead">
-                    This is
+                    This page serves as the home page for [/var/www/html/cgi].
                 </p>
                 <div class="alert alert-info" role="alert">
                     <strong>Info!</strong> This is the index.html page. This should be served as this folder's default document.
                 </div>
                 <div class="list-group">
-                    <a href="#" class="list-group-item active">
+                    <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading">via SSI display the document uri</h4>
                         <p class="list-group-item-text"><!--#echo var="DOCUMENT_URI" --></p>
                     </a>
                 </div>
                 <div class="list-group">
-                    <a href="#" class="list-group-item active">
+                    <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading">via SSI display the referer header of the request</h4>
                         <p class="list-group-item-text"><!--#echo reqheader="referer"  --></p>
                     </a>
                 </div>
                 <div class="list-group">
-                    <a href="#" class="list-group-item active">
+                    <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading">via SSI display the request state "pahtinfo"</h4>
                         <p class="list-group-item-text"><!--#echo reqheader="pathinfo"  --></p>
                     </a>
