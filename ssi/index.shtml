@@ -30,6 +30,9 @@
 
     <!-- Bootstrap JS -->
     <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+
+    <!-- Site JS -->
+    <script type="text/javascript" src="/assets/js/site.js"></script>
 </head>
 
 <body>
@@ -90,29 +93,49 @@
                 </div>
                 <div class="list-group">
                     <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">via SSI display the local date</h4>
+                        <p class="list-group-item-text">
+                            SSI Result is:
+                            <span class="ssi-result">
+                                <!--#echo var="DATE_LOCAL" -->
+                            </span>
+                        </p>
+                        <div class="alert alert-success hide">
+                            <strong>Success!</strong> SSI seems to be working.
+                        </div>
+                        <div class="alert alert-warning hide">
+                            <strong>Warning!</strong> Looks like SSI has not been configured correctly.
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item">
                         <h4 class="list-group-item-heading">via SSI display the document uri</h4>
                         <p class="list-group-item-text">
                             SSI Result is:
-                            <!--#echo var="DOCUMENT_URI" -->
+                            <span class="ssi-result">
+                                <!--#echo var="DOCUMENT_URI" -->
+                            </span>
                         </p>
+                        <div class="alert alert-success hide">
+                            <strong>Success!</strong> SSI seems to be working.
+                        </div>
+                        <div class="alert alert-warning hide">
+                            <strong>Warning!</strong> Looks like SSI has not been configured correctly.
+                        </div>
                     </a>
-                </div>
-                <div class="list-group">
                     <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">via SSI display the referer header of the request</h4>
+                        <h4 class="list-group-item-heading">via SSI display the IP address & port number of the remote host</h4>
                         <p class="list-group-item-text">
                             SSI Result is:
-                            <!--#echo reqheader="referer"  -->
+                            <span class="ssi-result">
+                                <!--#echo var="REMOTE_ADDR" --> <!--#echo var="REMOTE_PORT" -->                                 
+                            </span>
                         </p>
-                    </a>
-                </div>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">via SSI display the request state "pahtinfo"</h4>
-                        <p class="list-group-item-text">
-                            SSI Result is:
-                            <!--#echo reqheader="pathinfo"  -->
-                        </p>
+                        <div class="alert alert-success hide">
+                            <strong>Success!</strong> SSI seems to be working.
+                        </div>
+                        <div class="alert alert-warning hide">
+                            <strong>Warning!</strong> Looks like SSI has not been configured correctly.
+                        </div>
                     </a>
                 </div>
             </div>
