@@ -64,7 +64,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="/ssi">Default document</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="/ssi/index.html">index.html</a></li>
+                            <li><a href="/ssi/index.shtml">index.shtml</a></li>
                             <li><a href="/ssi/index.php">index.php</a></li>
                         </ul>
                     </li>
